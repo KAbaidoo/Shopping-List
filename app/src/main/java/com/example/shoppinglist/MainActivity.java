@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
                     savedInstanceState.getBoolean("list_visible");
             count = savedInstanceState.getInt("count");
             list = savedInstanceState.getStringArrayList("list_items");
-            count = savedInstanceState.getInt("count");
+
             if (isVisible) {
-//                TextView textView;
+
                 for (int i = 0; i < count; i++) {
                     textView = (TextView) viewGroup.getChildAt(i);
                     textView.setText(list.get(i));
